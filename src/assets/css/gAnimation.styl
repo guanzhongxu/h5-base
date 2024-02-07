@@ -1,0 +1,32 @@
+#app
+  overflow hidden
+
+.gIn-enter-active,
+.gIn-leave-active,
+.gOut-enter-active,
+.gOut-leave-active{
+  transition: all .25s linear;
+  position: absolute;
+}
+.gIn-leave-to {
+  transform: translateX(0);
+}
+.gIn-enter-from
+  z-index 1
+  transform translateX(100%)
+.gIn-enter-to{
+  z-index 1
+  transform: translateX(0);
+}
+
+.gOut-leave-from
+  z-index 1
+.gOut-leave-to {
+  transform: translateX(100%);
+  z-index 1
+}
+.gOut-enter-from
+  transform translateX(0)
+.gOut-enter-to{
+  transform: translateX(0);
+}

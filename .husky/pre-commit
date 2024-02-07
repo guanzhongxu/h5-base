@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+# Run eslint
+pnpm lint-clear
+
+# If eslint has errors or warnings, prevent the commit
+if [ $? -gt 0 ]; then
+    echo "ESLint has errors or warnings. Please fix them before committing."
+    exit 1
+fi
+
