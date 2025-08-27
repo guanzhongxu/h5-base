@@ -43,7 +43,8 @@ header
   box-sizing border-box
   max-height 70px
   flex none
-
+  box-shadow 0 0 10px 0 rgba(0, 0, 0, 0.1)
+  z-index 100000
   > h4
     text-align center
     line-height 46px
